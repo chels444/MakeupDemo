@@ -39,29 +39,35 @@ function setup() {
   bdew.position(210, 450);
   bdew.size(147,172);
   bdew.touchStarted(changeScreenToProduct);
+  bdew.mousePressed(changeScreenToProduct);
+
 
   bcir = createImg('https://i.imgur.com/5khSPEc.png', 'circle');
   bcir.position(190, 664);
   bcir.size(92,80);
   bcir.touchStarted(changeScreenToSelect);
+  bcir.mousePressed(changeScreenToSelect);
   bcir.hide();
 
   bcart = createImg('https://i.imgur.com/TNE1ZIi.png', 'cart button');
   bcart.position(83, 860);
   bcart.size(262,42);
   bcart.touchStarted(changeScreenToCart);
+  bcart.mousePressed(changeScreenToCart);
   bcart.hide();
 
   bview = createImg('https://i.imgur.com/tliJocT.png', 'view cart button');
   bview.position(90, 450);
   bview.size(251,52);
   bview.touchStarted(changeScreenToOrder);
+  bview.mousePressed(changeScreenToOrder);
   bview.hide();
 
   bcheck = createImg('https://i.imgur.com/Q6GX1wf.png', 'checkout button');
   bcheck.position(90, 800);
   bcheck.size(251,52);
   bcheck.touchStarted(changeScreenToConfirm);
+  bcheck.mousePressed(changeScreenToConfirm);
   bcheck.hide();
 
   screenNum = 1;
