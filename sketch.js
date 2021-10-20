@@ -38,30 +38,30 @@ function setup() {
   bdew = createImg('https://cdn.shopify.com/s/files/1/0902/2442/files/em-cosmic-pearl-dewy-eyshadow-05-0330.jpg?v=1631210454', 'dewy');
   bdew.position(210, 450);
   bdew.size(147,172);
-  bdew.mousePressed(changeScreenToProduct);
+  bdew.touchStarted(changeScreenToProduct);
 
   bcir = createImg('https://i.imgur.com/5khSPEc.png', 'circle');
   bcir.position(190, 664);
   bcir.size(92,80);
-  bcir.mousePressed(changeScreenToSelect);
+  bcir.touchStarted(changeScreenToSelect);
   bcir.hide();
 
   bcart = createImg('https://i.imgur.com/TNE1ZIi.png', 'cart button');
   bcart.position(83, 860);
   bcart.size(262,42);
-  bcart.mousePressed(changeScreenToCart);
+  bcart.touchStarted(changeScreenToCart);
   bcart.hide();
 
   bview = createImg('https://i.imgur.com/tliJocT.png', 'view cart button');
   bview.position(90, 450);
   bview.size(251,52);
-  bview.mousePressed(changeScreenToOrder);
+  bview.touchStarted(changeScreenToOrder);
   bview.hide();
 
   bcheck = createImg('https://i.imgur.com/Q6GX1wf.png', 'checkout button');
   bcheck.position(90, 800);
   bcheck.size(251,52);
-  bcheck.mousePressed(changeScreenToConfirm);
+  bcheck.touchStarted(changeScreenToConfirm);
   bcheck.hide();
 
   screenNum = 1;
@@ -225,7 +225,7 @@ function draw()
   //bcir.position(235,700);
   //bcir.size(60,60);
   //ellipse(235, 700, 60, 60);
-  //bcir.mousePressed(changeScreenToSelect);
+  //bcir.touchStarted(changeScreenToSelect);
 
   stroke(255);
   fill(217, 147,134);
